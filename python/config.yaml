@@ -1,0 +1,30 @@
+---
+nonprod:
+  SubnetIds:
+  - subnet-aefb23470c9
+  - subnet-d042132e7596
+  VpcId: vpc-9a123207c2fd
+  SecretName: dspassword1
+  DirectoryName: directory.services.nonprod.c0.abc.com
+  ShortDirectoryName: C0NONPROD
+  SharedAccounts:
+    - '759387151437' #NonProd Semi Auto
+    - '378888410647' #NonProd Auto 
+    - '831054035051' #Dev1
+    - '390641321784' #Dev2
+    - '469714693289' #Dev3
+prod:
+  SubnetIds:
+  - subnet-bf0ab1233f6
+  - subnet-3c4c1232777a
+  VpcId: vpc-49f123a3f2e
+  SecretName: dspassword3
+  DirectoryName: directory.services.prod.c0.abc.com
+  ShortDirectoryName: C0PROD
+  SharedAccounts:
+    - '47356768' #Prod Semi Auto
+    - '62598114' #Prod Auto 
+Pipeline:
+  Portfolio: 'coreservices'
+  App: 'adconnect'
+  Branch: 'prod'
